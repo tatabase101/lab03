@@ -48,28 +48,34 @@
                     <option value="rahul raghvan">Rahul Raghvan</option>
                     <option value="razeem hashmi">Razeem Hasmi</option>
                 </select>
-
             </p>
 		</fieldset>
 		<fieldset>
-			<legend>Competition Categories</legend>
-			<p>Select which categories your would like your cat entered</p>
-			<p><label for="bb">Best of Breed</label> 
-				<input type="checkbox" id="bb" name="category[]" value="best" checked="checked"/>
-			</p>
-			<p><label for="cute">Cutest</label> 
-				<input type="checkbox" id="cute" name="category[]" value="cute"/>
-			</p>
-			<p><label for="ugly">Ugliest</label> 
-				<input type="checkbox" id="ugly" name="category[]" value="ugly"/>
-			</p>
+			<legend>Issue</legend>
+			<label for="html">HTML</label> 
+				<input type="checkbox" id="html" name="html" value="HTML" checked="checked"/>
+			<label for="css">CSS</label> 
+				<input type="checkbox" id="css" name="css" value="CSS"/>
+			<label for="javascript">JavaScript</label> 
+				<input type="checkbox" id="javascript" name="javascript" value="Javascript"/>
+			<label for="php">PHP</label>
+                <input type="checkbox" id="php" name="php" value="PHP"/>
+            <label for="mysql">MySQL</label>
+                <input type="checkbox" id="mysql" name="mysql" value="MySQL"/>
+            <p><label for="description">Description of Issue</label><br>
+                <textarea id="description" name="description" rows="4" cols="30" placeholder="Write description of your problem here..."></textarea>
+            </p>
 		</fieldset>
-		<p><label for="comments">Comments</label>
-			<textarea id="comments" name="comments" rows="4" cols="40"></textarea>
-		</p>
-	</fieldset>
-	  
-	<input type= "submit" value="Register"/>
+		<fieldset>
+            <legend>Preferred Date/Time</legend>
+            <label for="date">Date</label>
+            <input type="text" name="preferred date" id="preffered date" placeholder="dd/mm/yyyy" pattern="dd/mm/yyyy"><br>
+            <label for="time">Time</label>
+            <input type="text" name="preferred time" id="preferred time" placeholder="00:00" pattern="00:00">
+        </fieldset>
+            
+    
+	<input type= "submit" value="Book"/>
 	<input type= "reset" value="Reset Form"/>
 </form>
 </body>
