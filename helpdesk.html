@@ -17,31 +17,29 @@
     </p>
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
-	<p><label for="owner">Owner&apos;s Name</label> 
-		<input type="text" name= "owner" id="owner" required="required"/>
-	</p>
-	<p><label for="email">Email</label> 
-		<!--Use an HTML5 email control -->
-      <input type="email" name= "email" id="email" required="required"/>
-	</p>
 	<fieldset>
 		<legend>Student Details</legend>
 		<p><label for="Student ID">Student ID</label> 
-			<input type="text" name= "catname" id="catname" maxlength="20" size="10" required="required"/>
+			<input type="text" name= "student id" id="student id" maxlength="20" size="10" required="required"/>
 		</p>
-		<p><label for="Given Name">Given Name</label> 
+		<p><label for="Given Name">Given Name</label>
+            <input type="text" name="given name" name="given name" required="required" maxlength="15" size="10"/> 
 		</p>
-		<p><label for="dob">Date of Birth</label> 
-			<input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+		<p><label for="Family Name">Family Name</label> 
+			<input type="text" name= "family name" id="family name" maxlength="15" size="10"/>
 		</p>
-		<fieldset>
-			<legend>Sex</legend>
-			<p><label for="male">Male</label> 
-				<input type="radio" id="male" name="sex" value="male"/>
+		</fieldset>
+        <fieldset>
+			<legend>Your Unit</legend>
+			<p><label for="cos1011">COS1011</label> 
+				<input type="radio" id="cos1011" name="cos1011" required="required"/>
 			</p>
-			<p><label for="female">Female</label> 
-				<input type="radio" id="female" name="sex" value="female"/>
+			<p><label for="cos60004">COS60004</label> 
+				<input type="radio" id="cos60004" name="cos60004"/>
 			</p>
+            <p><label for="cos60007">COS60007</label>
+                <input type="radio" id="cos60007" name="cos60007"/>
+            </p>
 		</fieldset>
 		<fieldset>
 			<legend>Competition Categories</legend>
