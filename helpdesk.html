@@ -20,27 +20,26 @@
 	<fieldset>
 		<legend>Student Details</legend>
 		<p><label for="studentid">Student ID</label> 
-			<input type="text" name= "student id" id="studentid" maxlength="20" size="10" required="required"/>
+			<input type="text" name= "student id" id="studentid" maxlength="10" size="10" required="required" pattern=""/>
 		</p>
-		<p><label for="givenname">Given Name</label>
-            <input type="text" name="given name" id="givenname" required="required" maxlength="15" size="10"/> 
-		</p>
-		<p><label for="familyname">Family Name</label> 
-			<input type="text" name= "family name" id="familyname" maxlength="15" size="10"/>
-		</p>
+		<p>
+            <label for="givenname">Given Name</label>
+            <input type="text" name="given name" id="givenname" required="required" maxlength="15" size="15" pattern=""/> 
+		    <label for="familyname">Family Name</label> 
+			<input type="text" name= "family name" id="familyname" required="required" maxlength="15" size="15" pattern=""/>
+        </p>
 		</fieldset>
         <fieldset>
 			<legend>Your Unit</legend>
-			<p><label for="cos1011">COS1011</label> 
+			<p>
+                <label for="cos1011">COS1011</label> 
 				<input type="radio" id="cos1011" name="cos1011" required="required"/>
-			</p>
-			<p><label for="cos60004">COS60004</label> 
+			    <label for="cos60004">COS60004</label> 
 				<input type="radio" id="cos60004" name="cos60004"/>
-			</p>
-            <p><label for="cos60007">COS60007</label>
+                <label for="cos60007">COS60007</label>
                 <input type="radio" id="cos60007" name="cos60007"/>
             </p>
-            <p><label for="yoututor">Your Tutor</label>
+            <p><label for="yourtutor">Your Tutor</label>
                 <select name="your tutor" id="yourtutor"> 
                     <option value="">Please Select</option>
                     <option value="ati kia">Ati KIa</option>
@@ -68,10 +67,10 @@
 		</fieldset>
 		<fieldset>
             <legend>Preferred Date/Time</legend>
-            <label for="date">Date</label>
-            <input type="text" name="preferred date" id="preferred date" placeholder="dd/mm/yyyy" pattern="dd/mm/yyyy"><br>
-            <label for="time">Time</label>
-            <input type="text" name="preferred time" id="preferred time" placeholder="00:00" pattern="00:00">
+            <label for="preferreddate">Date</label>
+            <input type="text" name="preferred date" id="preferreddate" placeholder="dd/mm/yyyy" pattern="dd/mm/yyyy"><br>
+            <label for="preferredtime">Time</label>
+            <input type="text" name="preferred time" id="preferredtime" placeholder="00:00" pattern="00:00">
         </fieldset>
             
     
